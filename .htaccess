@@ -1,0 +1,27 @@
+RewriteEngine On
+
+RewriteRule ^$ public/article/index.php
+RewriteRule ^c11-phong-it/$ public/article/hr.php
+RewriteRule ^c5-he-thong-nhan-su/$ public/article/hr.php
+RewriteRule ^blog-page-([0-9]+)$ public/article/index.php?page=$1
+RewriteRule ^c([0-9]+)-([a-zA-z0-9_-]+)-page-([0-9]+)$ public/article/listing.php?cat_id=$1&cat_name=$2&lpage=$3
+RewriteRule ^c([0-9]+)-([a-zA-z0-9_-]+)/$ public/article/listing.php?cat_id=$1&cat_name=$2
+RewriteRule ^tag-([a-zA-z0-9_-]+)(.*)$ public/article/tag.php?tag=$1
+RewriteRule ^p([0-9]+)-([a-zA-z0-9_-]+).html$ public/article/detail.php?pos_id=$1&pos_title=$2
+RewriteRule ^search$ public/article/search.php
+RewriteRule ^q=([a-zA-z0-9_-]+)-page-([0-9]+)$ public/article/search.php?q=$1&spage=$2
+RewriteRule ^post$ public/article/post.php
+RewriteRule ^edit-([0-9]+)$ public/article/edit.php?post=$1
+RewriteRule ^profile$ public/member/profile.php
+RewriteRule ^author-([0-9]+)/$ public/member/author.php?id=$1
+RewriteRule ^resetpass/$ public/member/reset_password.php
+RewriteRule ^profile-([0-9]+)$ public/member/profile.php?page=$1
+RewriteRule ^logout$ public/member/controllers/logout.controller.php
+RewriteRule ^doc$ public/document/doc.php
+RewriteRule ^pdf$ public/document/doc2.php
+RewriteRule ^excel$ public/document/excel.php
+RewriteRule ^file$ public/document/file.php
+RewriteRule ^download$ public/document/download.php
+RewriteRule ^error-file$ public/document/error.php
+RewriteRule ^404$ public/article/error404.php
+ErrorDocument 404 /public/article/error404.php

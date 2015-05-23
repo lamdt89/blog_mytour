@@ -1,0 +1,72 @@
+16/04/2015 09:04:16 AM /p888-khoa-luyen-thi-toeic-400-trong-20-buoi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_is_login, cat_has_it FROM categories WHERE cat_id=
+16/04/2015 09:04:29 AM /c18-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:08:27 AM /c3332-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:09:02 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:20:06 AM /c71-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:24:22 AM /c71-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:48:44 AM /c1334-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:49:33 AM /c1334-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:49:44 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:50:18 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  ORDER BY pos_id DESC LIMIT 
+16/04/2015 09:50:36 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:51:06 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:51:07 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:51:08 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:51:27 AM /c2333-tinh-nang-moi
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:51:42 AM /c34-giai-tri
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_parent_id FROM categories WHERE cat_id=
+16/04/2015 09:53:26 AM /c34-giai-tri
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 09:53:35 AM /c14-chia-se-kien-thuc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY pos_id DESC LIMIT  0,6' at line 1
+SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN () ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 11:40:06 AM /p343488-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_is_login, cat_has_it FROM categories WHERE cat_id=
+16/04/2015 11:40:24 AM /p343488-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+SELECT cat_is_login, cat_has_it FROM categories WHERE cat_id=
+23/04/2015 02:44:35 PM /
+No database selected
+SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+23/04/2015 02:44:35 PM /favicon.ico
+No database selected
+SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  )
+23/04/2015 02:48:38 PM /post
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+INSERT INTO vote_option(vop_name,vop_pos_id,vop_active) VALUES
+23/04/2015 02:49:42 PM /post
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+INSERT INTO vote_option(vop_name,vop_pos_id,vop_active) VALUES

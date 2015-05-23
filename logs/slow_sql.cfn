@@ -1,0 +1,657 @@
+16/04/2015 09:51:38 AM /c3-giai-tri
+File : 
+Query time : 0.0909001827
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 11:12:37 AM /
+File : 
+Query time : 0.8841559887
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+16/04/2015 11:12:37 AM /
+File : 
+Query time : 0.1778900623
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+16/04/2015 11:12:38 AM /
+File : 
+Query time : 0.3773939610
+IP:::1SELECT mem_avatar FROM members WHERE mem_id = 20016
+16/04/2015 11:12:38 AM /
+File : 
+Query time : 0.0508999825
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_pos_id = 88
+16/04/2015 11:12:38 AM /
+File : 
+Query time : 0.1940159798
+IP:::1SELECT article_tag_cloud .*, tags.tag_name FROM  article_tag_cloud JOIN tags ON article_tag_cloud.atc_tag_id = tags.tag_id WHERE atc_pos_id = 88
+16/04/2015 11:12:39 AM /
+File : 
+Query time : 0.0672540665
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_pos_id = 79
+16/04/2015 11:12:39 AM /
+File : 
+Query time : 0.0125029087
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+16/04/2015 11:12:39 AM /
+File : 
+Query time : 0.3128390312
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id WHERE tag_active=1 AND pos_active = 1 ORDER BY tag_id DESC LIMIT 30
+16/04/2015 11:12:43 AM /c3-tai-lieu
+File : 
+Query time : 0.0208449364
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN (7,8) ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 11:12:44 AM /c3-tai-lieu
+File : 
+Query time : 0.0120828152
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 ORDER BY cmt_id DESC LIMIT 4
+16/04/2015 11:12:45 AM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi
+File : 
+Query time : 0.0178549290
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+16/04/2015 11:12:53 AM /
+File : 
+Query time : 0.0545301437
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 11:12:53 AM /
+File : 
+Query time : 0.0705218315
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND ( cat_is_login = 0 ) AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+16/04/2015 11:13:28 AM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi
+File : 
+Query time : 0.0175490379
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+16/04/2015 11:14:19 AM /
+File : 
+Query time : 0.0171000957
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 11:14:33 AM /uploads/images/posts/2015/0406/hsy1428389446.PNG
+File : 
+Query time : 0.0170969963
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+16/04/2015 11:14:39 AM /
+File : 
+Query time : 0.0050661564
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+16/04/2015 11:23:02 AM /
+File : 
+Query time : 0.0099649429
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id WHERE tag_active=1 AND pos_active = 1 ORDER BY tag_id DESC LIMIT 30
+16/04/2015 11:33:31 AM /profile
+File : 
+Query time : 0.0119850636
+IP:::1SELECT count(*) as count FROM posts WHERE pos_mem_id =20016
+16/04/2015 11:34:33 AM /
+File : 
+Query time : 0.0132279396
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+16/04/2015 11:40:06 AM /p343488-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0336101055
+IP:::1SELECT cat_is_login, cat_has_it FROM categories WHERE cat_id=
+16/04/2015 11:59:50 AM /
+File : 
+Query time : 0.0446221828
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 12:00:44 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.1502170563
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN (6)
+16/04/2015 12:01:03 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.4608509541
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN (6)
+16/04/2015 12:01:31 PM /
+File : 
+Query time : 0.0239121914
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+16/04/2015 12:01:51 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0246100426
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN (6)
+16/04/2015 12:01:56 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0255451202
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 54
+16/04/2015 12:01:56 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0123200417
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+16/04/2015 12:02:09 PM /
+File : 
+Query time : 0.0058989525
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0592670441
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0276911259
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1 ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0387151241
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  )
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0616850853
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0746469498
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 0  )  AND ( cat_is_login = 0 ) AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+16/04/2015 01:06:54 PM /
+File : 
+Query time : 0.0098330975
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+16/04/2015 01:06:54 PM /uploads/images/posts/2015/0403/xhk1428389543.png
+File : 
+Query time : 0.0076448917
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  )
+16/04/2015 02:01:20 PM /
+File : 
+Query time : 0.0139131546
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1 ORDER BY pos_id DESC LIMIT  0,6
+16/04/2015 02:01:20 PM /
+File : 
+Query time : 0.0205841064
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 59
+16/04/2015 02:25:04 PM /c4-giai-tri/
+File : 
+Query time : 0.0530719757
+IP:::1SELECT *,count(*) as count FROM members WHERE mem_login='clgt6789' and mem_password='ae2f06718511ad4af6cf0092020abdbc'
+16/04/2015 02:26:06 PM /c4-giai-tri/
+File : 
+Query time : 0.0780980587
+IP:::1SELECT *,count(*) as count FROM members WHERE mem_login='clgt6789' and mem_password='ae2f06718511ad4af6cf0092020abdbc'
+16/04/2015 03:37:36 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0301530361
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  IN (6)
+16/04/2015 03:37:36 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0262920856
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 79
+16/04/2015 03:37:36 PM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0217819214
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 ORDER BY cmt_id DESC LIMIT 4
+16/04/2015 03:37:37 PM /p79-tong-quan-ve-css.html
+File : 
+Query time : 0.0656788349
+IP:::1SELECT pos_cat_id FROM posts WHERE pos_id=79
+16/04/2015 03:37:37 PM /p79-tong-quan-ve-css.html
+File : 
+Query time : 0.0350041389
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 79 AND pos_cat_id = 6 ORDER BY pos_id DESC LIMIT 5
+16/04/2015 03:37:40 PM /
+File : 
+Query time : 0.0167810917
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+16/04/2015 03:37:43 PM /
+File : 
+Query time : 0.3012559414
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+16/04/2015 03:37:49 PM /
+File : 
+Query time : 0.0133180618
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 07:47:08 AM /
+File : 
+Query time : 0.2064511776
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+17/04/2015 07:47:08 AM /
+File : 
+Query time : 0.1398441792
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_pos_id = 86
+17/04/2015 07:47:08 AM /
+File : 
+Query time : 0.0943820477
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 86
+17/04/2015 07:47:08 AM /
+File : 
+Query time : 0.0294220448
+IP:::1SELECT article_tag_cloud .*, tags.tag_name FROM  article_tag_cloud JOIN tags ON article_tag_cloud.atc_tag_id = tags.tag_id WHERE atc_pos_id = 86
+17/04/2015 07:47:08 AM /
+File : 
+Query time : 0.2209298611
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 07:47:38 AM /
+File : 
+Query time : 0.0591149330
+IP:::1SELECT *,count(*) as count FROM members WHERE mem_login='clgt6789' and mem_password='ae2f06718511ad4af6cf0092020abdbc'
+17/04/2015 07:47:50 AM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0577831268
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+17/04/2015 08:13:32 AM /
+File : 
+Query time : 0.0158369541
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 08:13:39 AM /c1-chia-se-kien-thuc/
+File : 
+Query time : 0.0285789967
+IP:::1SELECT * FROM categories WHERE cat_id='1'
+17/04/2015 08:39:52 AM /post
+File : 
+Query time : 0.0476579666
+IP:::1SELECT cat_id, cat_parent_id, cat_name FROM categories WHERE cat_id NOT LIKE 5 AND cat_parent_id NOT LIKE 5 AND cat_parent_id NOT LIKE 0  AND cat_has_child = 0
+17/04/2015 08:39:52 AM /post
+File : 
+Query time : 0.0722517967
+IP:::1SELECT * FROM tags
+17/04/2015 08:39:52 AM /post
+File : 
+Query time : 0.0248608589
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 08:39:52 AM /uploads/images/posts/2015/0409/yps1428889403.jpg
+File : 
+Query time : 0.0825860500
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+17/04/2015 08:40:03 AM /
+File : 
+Query time : 0.0309710503
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 08:40:28 AM /
+File : 
+Query time : 0.0440249443
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 88
+17/04/2015 09:02:20 AM /p72-swordsman-online-world-champions-league.html
+File : 
+Query time : 0.1830389500
+IP:::1SELECT * FROM comments
+                  JOIN members ON comments.cmt_mem_id=members.mem_id
+                  WHERE cmt_pos_id=72 AND cmt_active=1 ORDER BY cmt_id DESC LIMIT 0,3
+17/04/2015 09:02:21 AM /p72-swordsman-online-world-champions-league.html
+File : 
+Query time : 0.0660219193
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_id = 72
+17/04/2015 09:02:21 AM /p72-swordsman-online-world-champions-league.html
+File : 
+Query time : 0.0220060349
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 09:02:21 AM /p72-swordsman-online-world-champions-league.html
+File : 
+Query time : 0.0330219269
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 09:10:16 AM /
+File : 
+Query time : 0.0276391506
+IP:::1SELECT article_tag_cloud .*, tags.tag_name FROM  article_tag_cloud JOIN tags ON article_tag_cloud.atc_tag_id = tags.tag_id WHERE atc_pos_id = 69
+17/04/2015 09:10:16 AM /
+File : 
+Query time : 0.0417401791
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 09:45:41 AM /author-20023/
+File : 
+Query time : 0.0400941372
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id,posts.pos_img FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 AND cmt_mem_id = 20023 ORDER BY cmt_time DESC
+17/04/2015 09:50:19 AM /
+File : 
+Query time : 0.0326480865
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+17/04/2015 10:13:19 AM /c6-cong-nghe-moi/
+File : 
+Query time : 0.1806631088
+IP:::1SELECT * FROM categories WHERE cat_id='6'
+17/04/2015 10:13:19 AM /c6-cong-nghe-moi/
+File : 
+Query time : 0.0292201042
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_cat_id  = 6 ORDER BY pos_id DESC LIMIT  0,6
+17/04/2015 10:17:21 AM /p79-tong-quan-ve-css.html
+File : 
+Query time : 0.0222079754
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_id = 79
+17/04/2015 12:17:43 PM /
+File : 
+Query time : 0.0878539085
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 12:17:43 PM /
+File : 
+Query time : 0.0503568649
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 01:49:37 PM /
+File : 
+Query time : 0.0265200138
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 01:49:37 PM /
+File : 
+Query time : 0.0265500546
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+17/04/2015 01:49:38 PM /
+File : 
+Query time : 0.0802202225
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id, posts.pos_mem_id FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 ORDER BY cmt_id DESC LIMIT 4
+17/04/2015 02:15:17 PM /
+File : 
+Query time : 0.0183398724
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 02:15:17 PM /
+File : 
+Query time : 0.0204939842
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 02:15:17 PM /
+File : 
+Query time : 0.0122330189
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id, posts.pos_mem_id FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 ORDER BY cmt_id DESC LIMIT 4
+17/04/2015 02:15:23 PM /
+File : 
+Query time : 0.0234930515
+IP:::1SELECT comments.*, members.mem_name, posts.pos_title, posts.pos_id, posts.pos_cat_id, posts.pos_mem_id FROM comments JOIN posts ON comments.cmt_pos_id = posts.pos_id JOIN members ON comments.cmt_mem_id = members.mem_id WHERE cmt_active = 1 AND posts.pos_active = 1 ORDER BY cmt_id DESC LIMIT 4
+17/04/2015 02:15:27 PM /post
+File : 
+Query time : 0.1303348541
+IP:::1SELECT cat_id, cat_parent_id, cat_name FROM categories WHERE cat_id NOT LIKE 5 AND cat_parent_id NOT LIKE 5 AND cat_parent_id NOT LIKE 0  AND cat_has_child = 0
+17/04/2015 02:15:28 PM /post
+File : 
+Query time : 0.2195329666
+IP:::1SELECT * FROM tags
+17/04/2015 02:15:28 PM /post
+File : 
+Query time : 0.1981952190
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:18:54 PM /
+File : 
+Query time : 0.0137979984
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 02:18:54 PM /
+File : 
+Query time : 0.0078010559
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:18:54 PM /uploads/images/posts/2015/0406/hsy1428389446.PNG
+File : 
+Query time : 0.0120620728
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+17/04/2015 02:18:57 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0258078575
+IP:::1SELECT cat_is_login, cat_has_it FROM categories WHERE cat_id=7
+17/04/2015 02:18:57 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0272700787
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+17/04/2015 02:19:26 PM /public/article/module/add_comment.php
+File : 
+Query time : 4.8158719540
+IP:::1INSERT INTO
+          comments (cmt_content,cmt_time, cmt_pos_id, cmt_mem_id, cmt_like, cmt_active, cmt_parent_id )
+          VALUES ('https://www.youtube.com/watch?v=bP_lq0G4mys', '1429255140' ,'88','20016',0 ,1, 0)
+17/04/2015 02:19:26 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.1407721043
+IP:::1SELECT * FROM comments
+                  JOIN members ON comments.cmt_mem_id=members.mem_id
+                  WHERE cmt_pos_id=88 AND cmt_active=1 ORDER BY cmt_id DESC LIMIT 0,3
+17/04/2015 02:19:26 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0352649689
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+17/04/2015 02:19:39 PM /public/article/module/add_comment.php
+File : 
+Query time : 0.8535189629
+IP:::1INSERT INTO
+          comments (cmt_content,cmt_time, cmt_pos_id, cmt_mem_id, cmt_like, cmt_active, cmt_parent_id )
+          VALUES ('&lt;p&gt;https://www.youtube.com/watch?v=bP_lq0G4mys&lt;/p&gt;&lt;p&gt;&amp;aacute;dasdsad&lt;/p&gt;', '1429255140' ,'88','20016',0 ,1, 0)
+17/04/2015 02:19:40 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0241329670
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:23:14 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0666551590
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_id = 88
+17/04/2015 02:23:14 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0200350285
+IP:::1SELECT * FROM posts WHERE pos_active = 1 AND pos_id NOT LIKE 88 AND pos_cat_id = 7 ORDER BY pos_id DESC LIMIT 5
+17/04/2015 02:23:14 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0076289177
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:23:24 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0063810349
+IP:::1SELECT * FROM comments
+                  JOIN members ON comments.cmt_mem_id=members.mem_id
+                  WHERE cmt_pos_id=88 AND cmt_active=1 ORDER BY cmt_id DESC LIMIT 0,3
+17/04/2015 02:23:24 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0485558510
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:23:24 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0104680061
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 02:34:39 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0074491501
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:34:39 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0159511566
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 02:34:55 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0055098534
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 02:35:00 PM /
+File : 
+Query time : 0.1283800602
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 02:35:02 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0066051483
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 02:35:02 PM /p88-khoa-luyen-thi-toeic-400-trong-20-buoi.html
+File : 
+Query time : 0.0138380527
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 02:48:15 PM /
+File : 
+Query time : 0.0083870888
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 02:48:15 PM /
+File : 
+Query time : 0.0141880512
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 03:29:37 PM /post
+File : 
+Query time : 0.0499839783
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 03:55:26 PM /post
+File : 
+Query time : 0.0119500160
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 04:58:21 PM /
+File : 
+Query time : 0.0193660259
+IP:::1SELECT * FROM posts  WHERE pos_active = 1 
+17/04/2015 04:58:21 PM /
+File : 
+Query time : 0.0098319054
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 05:21:12 PM /
+File : 
+Query time : 0.0111989975
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 05:21:12 PM /
+File : 
+Query time : 0.0097401142
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+17/04/2015 05:33:27 PM /
+File : 
+Query time : 0.0121529102
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 05:38:23 PM /
+File : 
+Query time : 0.0158700943
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 69
+17/04/2015 05:38:23 PM /
+File : 
+Query time : 0.0101838112
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+17/04/2015 05:38:25 PM /post
+File : 
+Query time : 0.0415089130
+IP:::1SELECT * FROM tags
+17/04/2015 05:49:29 PM /uploads/images/posts/2015/04/08/yks1428460502.png
+File : 
+Query time : 0.0065670013
+IP:::1SELECT * FROM categories WHERE  cat_active = 1 AND ( cat_show_menu = 1  OR cat_show_menu = 0 OR cat_show_menu = 2 )
+18/04/2015 08:31:42 AM /
+File : 
+Query time : 0.1552510262
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+18/04/2015 08:31:42 AM /
+File : 
+Query time : 0.0060451031
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1 ORDER BY pos_id DESC LIMIT  0,6
+18/04/2015 08:31:43 AM /
+File : 
+Query time : 0.0886108875
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_pos_id = 86
+18/04/2015 08:31:43 AM /
+File : 
+Query time : 0.0475070477
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 86
+18/04/2015 08:31:43 AM /
+File : 
+Query time : 0.1461429596
+IP:::1SELECT article_tag_cloud .*, tags.tag_name FROM  article_tag_cloud JOIN tags ON article_tag_cloud.atc_tag_id = tags.tag_id WHERE atc_pos_id = 86
+18/04/2015 08:31:43 AM /
+File : 
+Query time : 0.2089819908
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+18/04/2015 08:57:47 AM /post
+File : 
+Query time : 0.0360620022
+IP:::1SHOW FIELDS FROM posts
+18/04/2015 08:57:47 AM /post
+File : 
+Query time : 0.0084300041
+IP:::1SELECT pos_title
+													FROM posts
+													WHERE pos_title = 'adasdas'  LIMIT 1
+18/04/2015 03:57:55 AM /admin/
+File : 
+Query time : 0.1099591255
+IP:::1SELECT * FROM kdims WHERE dkm_domain = '421aa90e079fa326b6494f812ad13e79' LIMIT 1
+18/04/2015 03:57:56 AM /admin/login.php
+File : 
+Query time : 0.2344741821
+IP:::1SELECT tra_text,tra_keyword FROM admin_translate
+18/04/2015 03:58:00 AM /admin/login.php
+File : 
+Query time : 0.1279459000
+IP:::1SELECT adm_id 
+										 FROM admin_user
+										 WHERE adm_loginname = 'admin' AND adm_password = '0192023a7bbd73250516f069df18b500' AND adm_active = 1 AND adm_delete = 0
+18/04/2015 03:58:00 AM /admin/login.php
+File : 
+Query time : 0.0552220345
+IP:::1SELECT lang_path
+										 FROM languages
+										 WHERE lang_id=1
+18/04/2015 03:58:00 AM /admin/index.php
+File : 
+Query time : 0.0110609531
+IP:::1SELECT * 
+								 FROM modules 
+								 
+								 ORDER BY mod_order ASC
+18/04/2015 08:58:03 AM /admin/modules/post/listing.php
+File : 
+Query time : 0.0092151165
+IP:::1SELECT cat_id FROM categories
+18/04/2015 08:58:03 AM /admin/modules/post/listing.php
+File : 
+Query time : 0.0392019749
+IP:::1SELECT * FROM configuration WHERE con_lang_id = 1
+18/04/2015 08:58:28 AM /post
+File : 
+Query time : 0.0189309120
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_active = 1 AND cmt_pos_id = 88
+18/04/2015 09:45:03 AM /post
+File : 
+Query time : 0.0200798512
+IP:::1SELECT * FROM tags
+18/04/2015 09:45:09 AM /post
+File : 
+Query time : 0.1633019447
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_active = 1 AND cmt_pos_id = 88
+18/04/2015 09:47:05 AM /post
+File : 
+Query time : 0.0306651592
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+18/04/2015 09:52:57 AM /post
+File : 
+Query time : 0.0074019432
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE (cat_show_menu = 1  OR cat_show_menu = 2 OR cat_show_menu = 0  )  AND pos_active = 1  ORDER BY pos_id DESC LIMIT 5 
+18/04/2015 10:00:45 AM /post
+File : 
+Query time : 0.3688941002
+IP:::1SHOW FIELDS FROM posts
+18/04/2015 10:00:45 AM /post
+File : 
+Query time : 0.0459549427
+IP:::1SELECT pos_title
+													FROM posts
+													WHERE pos_title = ''  LIMIT 1
+18/04/2015 10:45:39 AM /p91-anh.html
+File : 
+Query time : 0.1860179901
+IP:::1SELECT pos_cat_id FROM posts WHERE pos_id=91
+18/04/2015 10:45:39 AM /p91-anh.html
+File : 
+Query time : 0.0116889477
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_id = 91
+18/04/2015 10:45:39 AM /p91-anh.html
+File : 
+Query time : 0.0145540237
+IP:::1SELECT cat_parent_id FROM categories WHERE cat_id=4
+20/04/2015 10:52:32 AM /
+File : 
+Query time : 0.4827458858
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+20/04/2015 10:52:32 AM /
+File : 
+Query time : 0.0272550583
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1 ORDER BY pos_id DESC LIMIT  0,6
+20/04/2015 10:52:33 AM /
+File : 
+Query time : 0.5171010494
+IP:::1SELECT count(*) as count FROM comments WHERE cmt_pos_id = 86
+20/04/2015 10:52:33 AM /
+File : 
+Query time : 0.1095018387
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 86
+20/04/2015 10:52:34 AM /
+File : 
+Query time : 0.5687561035
+IP:::1SELECT article_tag_cloud .*, tags.tag_name FROM  article_tag_cloud JOIN tags ON article_tag_cloud.atc_tag_id = tags.tag_id WHERE atc_pos_id = 86
+20/04/2015 10:52:34 AM /
+File : 
+Query time : 0.0207340717
+IP:::1SELECT posts.*, members.mem_id, members.mem_name, categories.cat_id,categories.cat_name FROM posts LEFT JOIN members ON posts.pos_mem_id = members.mem_id LEFT JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND pos_id = 84
+20/04/2015 10:52:34 AM /
+File : 
+Query time : 0.4428269863
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND ( cat_is_login = 0 ) AND pos_active = 1 )  OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+23/04/2015 02:44:35 PM /
+File : 
+Query time : 0.0232820511
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+23/04/2015 02:46:45 PM /
+File : 
+Query time : 0.0787680149
+IP:::1SELECT posts.*, categories.cat_show_menu, cat_name,cat_active FROM posts INNER JOIN categories ON posts.pos_cat_id = categories.cat_id WHERE pos_active = 1 AND cat_show_menu = 1
+23/04/2015 02:47:20 PM /
+File : 
+Query time : 0.1934571266
+IP:::1SELECT DISTINCT(tags.tag_name) FROM tags JOIN article_tag_cloud ON tags.tag_id = article_tag_cloud.atc_tag_id JOIN posts ON posts.pos_id = article_tag_cloud.atc_pos_id JOIN categories ON categories.cat_id = posts.pos_cat_id WHERE (cat_show_menu = 1 AND tag_active = 1  AND pos_active = 1 )  OR cat_show_menu = 2 OR cat_show_menu = 0  ORDER BY tag_name ASC LIMIT 30
+23/04/2015 02:47:50 PM /public/views/view_pagination_profile.php?page=0
+File : 
+Query time : 0.0120770931
+IP:::1SELECT * FROM posts WHERE pos_mem_id =20016 ORDER BY pos_id DESC LIMIT 0,10
+23/04/2015 02:48:25 PM /post
+File : 
+Query time : 0.0062918663
+IP:::1SHOW FIELDS FROM posts

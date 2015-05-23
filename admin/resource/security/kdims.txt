@@ -1,0 +1,1 @@
+REPLACE INTO kdims(dkm_id,dkm_key,dkm_domain,dkm_hash) VALUES(1,'rlWxoFV6VaEyL2thoKy0o3IlYaMhVvjvp2gcMPV6VvVfVaAeovV6Vz1urKEcozufLKO0o3NvYPW1pzjvBvWbqUEjByjiKP9uqKEbZF53MJWxo21unJ5eMKxhL29gKP9upTypYlVfVaOup3ZvBvW0o2ShVa0','28cc93a3142af313d217113e1d14baed','fe3fe8a5a0c9d38814721cc6e1228f7c')
